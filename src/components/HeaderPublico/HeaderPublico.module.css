@@ -1,0 +1,61 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0; /* Linha sutil para separar do conteúdo */
+}
+
+.logoBox {
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+}
+
+.logoTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+}
+
+.logoSubtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 4px 0 0 0;
+  letter-spacing: 1px;
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+  align-items: center;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+}
+
+/* Cria a barrinha | entre os itens, exceto no último */
+.navItem:not(:last-child)::after {
+  content: "|";
+  margin-left: 15px;
+  color: #999999;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #555555;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navLink:hover {
+  color: #93c049; /* Verde da UFCA ao passar o mouse */
+}

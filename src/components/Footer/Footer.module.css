@@ -1,0 +1,75 @@
+.footerContainer {
+  background-color: #411a05; /* Marrom escuro da UFCA */
+  color: #ffffff;
+  padding: 40px 5% 20px 5%;
+  margin-top: auto; /* Empurra o rodapé para o final da página */
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 30px;
+}
+
+.footerInfo {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footerTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #93c049; /* Verde da UFCA para destaque */
+}
+
+.footerInfo p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin: 5px 0;
+}
+
+.footerLinks {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footerLinks h4 {
+  color: #fecf53; /* Amarelo da UFCA */
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 12px;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: #cccccc;
+  transition: color 0.3s;
+  font-size: 0.95rem;
+}
+
+.footerLinks a:hover {
+  color: #93c049;
+}
+
+.footerBottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.85rem;
+  color: #888888;
+}
