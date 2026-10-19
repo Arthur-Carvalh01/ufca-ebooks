@@ -1,0 +1,38 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 160px; /* Largura base semelhante à do protótipo */
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  background-color: #ffffff;
+  text-decoration: none; /* Remove o sublinhado do link */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.capa {
+  width: 100%;
+  height: 230px;
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+.info {
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333333;
+  /* Estas três linhas fazem o texto muito longo ganhar "..." no final, igual ao seu protótipo */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}

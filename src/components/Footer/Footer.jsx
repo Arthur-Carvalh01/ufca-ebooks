@@ -26,9 +26,15 @@ export function Footer() {
         
       </div>
       
-      {/* Direitos Autorais */}
+      {/* Direitos Autorais e Site */}
       <div className={styles.footerBottom}>
-        <p>&copy; {new Date().getFullYear()} Plataforma de E-books UFCA. Todos os direitos reservados.</p>
+        <p>
+          &copy; {new Date().getFullYear()} Plataforma de E-books UFCA. Todos os direitos reservados. 
+          <br /> {/* Quebra a linha para o site ficar embaixo */}
+          <a href="https://www.ufca.edu.br" target="_blank" rel="noopener noreferrer" className={styles.siteUrl}>
+            www.ufca.edu.br
+          </a>
+        </p>
       </div>
     </footer>
   );

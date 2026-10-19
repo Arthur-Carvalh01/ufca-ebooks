@@ -1,8 +1,12 @@
 .footerContainer {
-  background-color: #411a05; /* Marrom escuro da UFCA */
+  background-color: #3e1b04; /* Marrom profundo alinhado com a paleta da UFCA */
   color: #ffffff;
   padding: 40px 5% 20px 5%;
-  margin-top: auto; /* Empurra o rodapé para o final da página */
+  margin-top: auto;
+  
+  /* Adiciona a mesma linha colorida do cabeçalho, mas agora na parte de cima (top) */
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(to right, #471a04, #e87c33, #f6ca56, #a1b365, #5fc3d9) 1;
 }
 
 .footerContent {
@@ -25,7 +29,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #93c049; /* Verde da UFCA para destaque */
+  color: #a1b365; /* O mesmo verde do cabeçalho para criar unidade visual */
 }
 
 .footerInfo p {
@@ -41,7 +45,7 @@
 }
 
 .footerLinks h4 {
-  color: #fecf53; /* Amarelo da UFCA */
+  color: #a1b365; /* O mesmo verde do cabeçalho */
   margin-bottom: 20px;
   font-size: 1.1rem;
 }
@@ -72,4 +76,15 @@
   padding-top: 20px;
   font-size: 0.85rem;
   color: #888888;
+}
+
+.siteUrl {
+  color: #a1b365;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.siteUrl:hover {
+  opacity: 0.7;
 }

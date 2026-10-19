@@ -1,12 +1,16 @@
 import { Link } from 'react-router-dom';
 import styles from './HeaderPublico.module.css';
 
+// Importa a imagem que você acabou de salvar na pasta assets
+import logoImg from '../../assets/logo-ebooks.png'; 
+
 export function HeaderPublico() {
   return (
     <header className={styles.headerContainer}>
       
+      {/* Container da Logo + Texto da Universidade */}
       <div className={styles.logoBox}>
-        <h1 className={styles.logoTitle}>E-Books</h1>
+        <img src={logoImg} alt="Logo E-Books" className={styles.logoImg} />
         <p className={styles.logoSubtitle}>
           UNIVERSIDADE<br />FEDERAL DO CARIRI
         </p>
