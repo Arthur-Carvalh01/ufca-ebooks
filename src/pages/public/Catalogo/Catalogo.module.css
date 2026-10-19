@@ -6,16 +6,17 @@
 
 /* --- Barra Lateral de Temas --- */
 .sidebar {
-  width: 220px;
+  width: 260px; /* Aumentamos a largura da caixa */
+  margin-left: -30px; /* Puxa a barra mais para a esquerda */
   flex-shrink: 0;
   background-color: #fdfdfd;
-  padding: 20px;
+  padding: 25px; /* Damos um pouco mais de espaço interno */
   border-radius: 8px;
   border: 1px solid #eaeaea;
 }
 
 .tituloSidebar {
-  font-size: 1.2rem;
+  font-size: 1.5rem; /* Título maior (era 1.2rem) */
   color: #3e1b04;
   margin-top: 0;
   margin-bottom: 20px;
@@ -34,7 +35,7 @@
 
 .temaItem {
   color: #555555;
-  font-size: 1rem;
+  font-size: 1.15rem; /* Fontes dos temas maiores (era 1rem) */
   cursor: pointer;
   transition: color 0.2s, padding-left 0.2s;
 }
@@ -42,7 +43,7 @@
 .temaItem:hover {
   color: #a1b365;
   font-weight: 600;
-  padding-left: 5px; /* Pequeno efeito de movimento ao passar o rato */
+  padding-left: 5px;
 }
 
 /* --- Conteúdo Principal (Busca e Grelha) --- */
@@ -53,9 +54,23 @@
   gap: 25px;
 }
 
-.buscaContainer {
+/* --- Cabeçalho do Conteúdo (Título e Busca) --- */
+.cabecalhoConteudo {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; /* Coloca o título de um lado e a busca do outro */
+  align-items: center;
+}
+
+.tituloPagina {
+  font-size: 2rem;
+  color: #3e1b04; /* Marrom escuro da UFCA */
+  margin: 0;
+  font-weight: bold;
+}
+
+.buscaContainer {
+  /* Removemos o justify-content antigo daqui, pois o cabecalhoConteudo já faz o alinhamento */
+  display: flex;
 }
 
 .inputBusca {

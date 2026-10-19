@@ -39,13 +39,17 @@ export function Catalogo() {
       {/* Conteúdo Central */}
       <section className={styles.conteudoPrincipal}>
         
-        {/* Barra de Pesquisa */}
-        <div className={styles.buscaContainer}>
-          <input 
-            type="text" 
-            placeholder="Pesquise aqui..." 
-            className={styles.inputBusca}
-          />
+        {/* Cabeçalho com Título e Busca */}
+        <div className={styles.cabecalhoConteudo}>
+          <h2 className={styles.tituloPagina}>Catálogo de Livros</h2>
+          
+          <div className={styles.buscaContainer}>
+            <input 
+              type="text" 
+              placeholder="Pesquise aqui..." 
+              className={styles.inputBusca}
+            />
+          </div>
         </div>
 
         {/* Grelha de Livros */}
